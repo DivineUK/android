@@ -1,0 +1,77 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="roundSelector">@drawable/round_selector</item>
+        <item name="rectSelector">@drawable/rect_selector</item>
+        <item name="statusBarBackground">@color/colorPrimaryDark</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+
+
+
+    <style name="BottomSheetItemTextAppearance" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="TextViewNormal" parent="">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Widget.BottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+
+    </style>
+
+    <style name="TextViewHeadline4" parent="TextAppearance.MaterialComponents.Headline4" />
+
+    <style name="TextViewHeadline5" parent="TextAppearance.MaterialComponents.Headline5" />
+
+    <style name="TextViewCaption" parent="TextAppearance.MaterialComponents.Caption" />
+
+    <style name="TextViewHeadline6" parent="TextAppearance.MaterialComponents.Headline6" />
+
+    <style name="TextViewHeadline3" parent="TextAppearance.MaterialComponents.Headline3" />
+
+    <style name="TextViewHeadline2" parent="TextAppearance.MaterialComponents.Headline2" />
+
+    <style name="TextViewSubtitle1" parent="TextAppearance.MaterialComponents.Subtitle1" />
+
+    <style name="TextViewSubtitle2" parent="TextAppearance.MaterialComponents.Subtitle2" />
+
+    <style name="TextViewBody1" parent="TextAppearance.MaterialComponents.Body1" />
+
+    <style name="TextViewButton" parent="TextAppearance.MaterialComponents.Button" />
+
+    <style name="TextViewBody2" parent="TextAppearance.MaterialComponents.Body2" />
+
+    <style name="TextViewOverline" parent="TextAppearance.MaterialComponents.Overline" />
+
+    <style name="OverFlowButton">
+        <item name="srcCompat">@drawable/ic_more_vert</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">@drawable/round_selector</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+
+    <style name="Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="popupTheme">?toolbarPopupTheme</item>
+        <item name="android:transitionName" tools:ignore="NewApi">toolbar</item>
+        <item name="layout_collapseMode">pin</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="titleMarginStart">16dp</item>
+
+    </style>
+
+</resources>

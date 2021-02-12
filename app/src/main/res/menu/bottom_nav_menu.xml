@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/liveStreamFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_live_tv_24"
+        android:title="@string/videos"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/radioFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_radio_24"
+        android:title="@string/radio"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/eventFragment"
+        android:enabled="true"
+
+        android:icon="@drawable/ic_baseline_event_24"
+        android:title="@string/events"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,38 @@
+/*
+ * Copyright (c) 2020 Hemanth Savarla.
+ *
+ * Licensed under the GNU General Public License v3
+ *
+ * This is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+ *
+ * This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details.
+ *
+ */
+package org.divineuk.divineapp.ui.fragments
+
+
+import androidx.annotation.LayoutRes
+import org.divineuk.divineapp.ui.fragments.base.AbsMainActivityFragment
+
+
+abstract class AbsPlayerFragment(@LayoutRes layout: Int) : AbsMainActivityFragment(layout){
+
+    private var playerAlbumCoverFragment: AlbumCoverFragment? = null
+
+
+    companion object {
+        val TAG: String = AbsPlayerFragment::class.java.simpleName
+        const val VISIBILITY_ANIM_DURATION: Long = 300
+    }
+
+    abstract fun onBackPressed(): Boolean
+
+    abstract fun onShow()
+
+    abstract fun onHide()
+
+}

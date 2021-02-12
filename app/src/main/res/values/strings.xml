@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Divine UK</string>
+    <string name="divine_uk">Divine UK</string>
+    <string name="home">Home</string>
+    <string name="videos">Videos</string>
+    <string name="radio">Radio</string>
+    <string name="events">Events</string>
+    <string name="permissions_denied">Permissions denied.</string>
+    <string name="empty_text_emoji" translatable="false">&#128561;</string>
+    <string name="empty">Empty</string>
+    <string name="no_songs">You have no songs</string>
+    <string name="audio_focus_denied">Audio focus denied.</string>
+    <string name="unplayable_file">Couldn\u2019t play this song.</string>
+    <string name="playlist_is_empty">Playlist is empty</string>
+</resources>
