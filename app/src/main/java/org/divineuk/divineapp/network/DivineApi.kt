@@ -7,9 +7,9 @@ import retrofit2.http.GET
 interface DivineApi{
 
     companion object{
-        const val BASE_URL = "http://www.json-generator.com/api/json/get/" //TODO
+        const val BASE_URL = "https://divineuk.github.io/api/test/" //TODO
     }
 
-    @GET("cfTUqQtzYi?indent=2") //TODO
+    @GET("home.json") //TODO
     suspend fun getHomePageContents() : Response<HomeContent>
 }

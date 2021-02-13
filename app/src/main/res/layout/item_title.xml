@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/title_view"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
-    android:text="Radio"
-    android:textColor="@color/colorHomePageTitle"
-    android:textSize="25sp"
-    android:textStyle="bold" />
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:text="Daily Live"
+        android:textColor="@color/exo_black_opacity_70"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/sub_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:text="Everyday at 6pm GMT"
+        android:textColor="@color/exo_black_opacity_30"
+        android:textSize="12sp" />
+</LinearLayout>

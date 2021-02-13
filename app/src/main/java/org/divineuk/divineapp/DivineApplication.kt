@@ -8,7 +8,6 @@ import org.divineuk.divineapp.ui.components.UiComponents
 class DivineApplication: Application() {
     override fun onCreate() {
         super.onCreate()
-        UiComponents.init(applicationContext)
         instance = this
     }
 

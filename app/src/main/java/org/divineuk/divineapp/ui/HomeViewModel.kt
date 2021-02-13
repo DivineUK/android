@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModel
 import org.divineuk.divineapp.data.Resource
 import org.divineuk.divineapp.data.home.HomePageRepository
 import org.divineuk.divineapp.network.model.HomeContent
+import javax.inject.Inject
 
 class HomeViewModel @ViewModelInject constructor(
     repository: HomePageRepository

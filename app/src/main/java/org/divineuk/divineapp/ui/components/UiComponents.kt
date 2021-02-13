@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import com.synnapps.carouselview.CarouselView
 import com.synnapps.carouselview.ImageListener
+import kotlinx.android.synthetic.main.item_title.view.*
 import org.divineuk.divineapp.R
 import org.divineuk.divineapp.network.model.*
 
@@ -20,18 +21,6 @@ object UiComponents {
     const val TYPE_TITLE = 1
     const val TYPE_IMAGE = 2
     const val TYPE_CAROUSEL = 3
-
-
-    private lateinit var context: Context
-    private lateinit var rootView: View
-
-    fun init(context: Context) {
-        this.context = context
-        val inflater = LayoutInflater.from(this.context)
-        rootView = inflater.inflate(
-            R.layout.dynamic_views, null, false
-        )
-    }
 
     //TODO extract to dims xml
     private fun textSize(textSize: String): Float {
@@ -73,13 +62,13 @@ object UiComponents {
 
     class TitleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun setData(title: Title) {
-            val titleTextView = itemView as TextView
+            val titleTextView = itemView.title_view
             titleTextView.text = title.props?.text
             title.props?.color.let {
-                titleTextView.setTextColor(parseColor(it!!))
+                //titleTextView.setTextColor(parseColor(it!!))
             }
-            titleTextView.textSize = textSize(title.props?.size!!)
-            titleTextView.gravity = setGravity(title.props.align)
+           // titleTextView.textSize = textSize(title.props?.size!!)
+            //titleTextView.gravity = setGravity(title.props.align)
 
         }
     }
