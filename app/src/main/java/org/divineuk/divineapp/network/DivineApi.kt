@@ -10,6 +10,6 @@ interface DivineApi{
         const val BASE_URL = "https://divineuk.github.io/api/test/" //TODO
     }
 
-    @GET("home.json") //TODO
+    @GET("home_new.json") //TODO
     suspend fun getHomePageContents() : Response<HomeContent>
 }

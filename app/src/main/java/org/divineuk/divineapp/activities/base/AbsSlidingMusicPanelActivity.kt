@@ -257,15 +257,18 @@ abstract class AbsSlidingMusicPanelActivity : AbsMusicServiceActivity() {
 
     private fun setupLightActionBar(){
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            window.navigationBarColor = Color.WHITE;
             window.decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR)
+            window.navigationBarColor = resources.getColor(R.color.colorPrimary)
+
         }
     }
 
 
     private fun setupLightStatusBar(){
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            window.decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+            val flags = window.decorView.systemUiVisibility
+
+            window.decorView.setSystemUiVisibility(flags or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         }
     }
 }

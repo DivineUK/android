@@ -8,6 +8,7 @@
 
     <FrameLayout
         android:id="@+id/mainContentFrame"
+        android:layout_marginBottom="48dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
@@ -31,7 +32,6 @@
         <FrameLayout
             android:id="@+id/playerFragmentContainer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
             android:layout_height="wrap_content" />
 
         <fragment

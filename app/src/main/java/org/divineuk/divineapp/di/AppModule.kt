@@ -36,6 +36,14 @@ object AppModule {
                     Image::class.java
                 } else if (kind == "carousel") {
                     Carousel::class.java
+                }else if (kind == "event") {
+                    Event::class.java
+                }else if (kind == "youtubeLink") {
+                    YoutubeLink::class.java
+                }else if (kind == "imageLink") {
+                    ImageLink::class.java
+                }else if (kind == "textLink") {
+                    TextLink::class.java
                 }else{
                     null
                 }

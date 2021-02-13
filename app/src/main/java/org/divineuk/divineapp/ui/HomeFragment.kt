@@ -33,12 +33,15 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private fun setupObservers() {
         viewModel.homePageContent.observe(viewLifecycleOwner, Observer {
-            Log.e("Sabin", "setupObservers: ${it}")
+            it.data?.content?.forEach{
+                it -> Log.e("Sabin", "setupObservers: ${it.type}")
+            }
+
             when (it.status) {
 
                 Resource.Status.SUCCESS -> {
                     progressBar.visibility = View.GONE
-                    recycler_view.adapter = HomeAdapter(it.data!!)
+                    recycler_view.adapter = HomeAdapter(requireActivity(),it.data!!)
                 }
                 Resource.Status.ERROR -> {
                     progressBar.visibility = View.GONE

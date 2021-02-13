@@ -45,17 +45,35 @@
             android:textColor="?android:attr/textColorPrimary"
             tools:text="@tools:sample/lorem/random" />
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/actionStop"
-            android:clickable="true"
-            android:focusable="true"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_vertical"
-            android:background="@drawable/round_selector"
-            android:padding="6dp"
-            app:srcCompat="@drawable/ic_stop_white"
-            app:tint="?attr/colorControlNormal" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <com.google.android.material.progressindicator.ProgressIndicator
+                android:id="@+id/progressBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:circularRadius="16dp"
+                app:indicatorColor="@android:color/black"
+                app:indicatorType="circular"
+                app:indicatorSize="2dp"
+                app:linearSeamless="true"
+                tools:progress="10" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/actionStop"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/round_selector"
+                android:padding="8dp"
+                app:srcCompat="@drawable/ic_stop_white"
+                app:tint="?attr/colorControlNormal" />
+        </FrameLayout>
+
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/actionPrevious"
